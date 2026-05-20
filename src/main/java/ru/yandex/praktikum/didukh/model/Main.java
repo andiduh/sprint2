@@ -1,12 +1,7 @@
-package org.example;
+package ru.yandex.praktikum.didukh.model;
 
-import model.Apple;
-import model.Food;
-import model.Meat;
-import service.ShoppingCart;
+import ru.yandex.praktikum.didukh.service.ShoppingCart;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Meat meat = new Meat(5, 100);
@@ -16,9 +11,9 @@ public class Main {
         Food[] food = {meat, appleRed, appleGreen};
         ShoppingCart shoppingCart = new ShoppingCart(food);
 
-        double total = shoppingCart.total();
-        double totalWithDiscount = shoppingCart.totalWithDiscount();
-        double totalVegetarian = shoppingCart.totalVegetarian();
+        double total = shoppingCart.getTotalSumWithoutDiscount();
+        double totalWithDiscount = shoppingCart.gettotalSumWithDiscount();
+        double totalVegetarian = shoppingCart.getTotalSumWithoutDiscountVegetarian();
 
         System.out.println("Общая сумма товаров без скидки: " + total);
         System.out.println("Общая сумма товаров со скидкой: " + totalWithDiscount);

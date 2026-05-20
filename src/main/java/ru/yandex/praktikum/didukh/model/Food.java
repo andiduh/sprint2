@@ -1,4 +1,4 @@
-package model;
+package ru.yandex.praktikum.didukh.model;
 
 public abstract class Food implements Discountable {
     protected int amount;
@@ -13,7 +13,7 @@ public abstract class Food implements Discountable {
         return price;
     }
 
-    public boolean getIsVegetarian() {
+    public boolean IsVegetarian() {
         return isVegetarian;
     }
 }

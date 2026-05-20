@@ -1,6 +1,6 @@
-package model;
+package ru.yandex.praktikum.didukh.model;
 
-import static model.constants.Discount.NOT_DISCOUNT;
+import static ru.yandex.praktikum.didukh.model.constants.Discount.NOT_DISCOUNT;
 
 public class Meat extends Food {
 
