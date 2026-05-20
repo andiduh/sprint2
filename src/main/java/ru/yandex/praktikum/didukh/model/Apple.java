@@ -1,7 +1,8 @@
-package model;
-import static model.constants.Colour.RED;
-import static model.constants.Discount.DISCOUNT_RED_APPLE;
-import static model.constants.Discount.NOT_DISCOUNT;
+package ru.yandex.praktikum.didukh.model;
+
+import static ru.yandex.praktikum.didukh.model.constants.Colour.RED;
+import static ru.yandex.praktikum.didukh.model.constants.Discount.DISCOUNT_RED_APPLE;
+import static ru.yandex.praktikum.didukh.model.constants.Discount.NOT_DISCOUNT;
 
 public class Apple extends Food {
     private String colour;
